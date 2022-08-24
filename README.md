@@ -28,9 +28,13 @@ Simply open the project in Android studio. Do not forget to Modify the `ServerCo
 
 ### Running the Server
 
-To run the server simply run the `main()` function residing in `Main.kt` file from within Android Studio. Alternatively you can also run the server via the command line using the following Gradle task:
+In order to run the server just execute the following gradle task:
 
 `./gradlew :server:grpcServer`
+
+The above task will first generate the required protocol buffer classes and also run the server all together.
+
+Alternatively you can click the little "Play" icon on the `main()` function residing in `Main.kt` file within the server module from through Android Studio. This will also run the server as long as the proto classes have been generated upfront.
 
 ### Future goals and improvements
 
