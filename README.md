@@ -17,7 +17,6 @@ This app features the following technologies and coding practices.
 - Proto Datastore for local caching
 - Koin for Dependency Injection
 - Gradle Kotlin DSL scripts
-- Navigation Component
 - Clean architecture principles (domain, data, presentation)
 - Coroutines for asynchronous calls. Suspending functions and Flows
 - A slightly customized MVVM approach. I use ViewModels with StateFlows that emit `sealed` classes as states. The UI decides what to do based on the state received.
@@ -36,7 +35,7 @@ To run the server simply run the `main()` function residing in `Main.kt` file fr
 ### Future goals and improvements
 
 - Improve error handling. Provide more meaningful error messages e.g. for network failures
-- Unit tests? Ain't nobody got time for tests. Production is the REAL TEST! (just kidding)
+- Unit tests? Ain't nobody got time for tests.
 - Use some form of encryption to store user's credentials.
 - Refactor some parts and make general improvements to the code base.
 - Migrate to jetpack Compose?
