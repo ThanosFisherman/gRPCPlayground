@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="ifContentScrolls"
+    tools:context=".presentation.fragments.UserProfileFragment">
+
+    <ViewAnimator
+        android:id="@+id/animator_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/progress_layout"
+            layout="@layout/include_progress_layout" />
+
+        <include
+            android:id="@+id/register_layout"
+            layout="@layout/include_register_layout" />
+
+        <include
+            android:id="@+id/user_layout"
+            layout="@layout/include_user_layout" />
+    </ViewAnimator>
+
+</ScrollView>

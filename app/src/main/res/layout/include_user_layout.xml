@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+        tools:text="Welcome Thanos Psaridis" />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/item_avatar_size"
+        android:layout_height="@dimen/item_avatar_size"
+        android:src="@drawable/ic_account" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        tools:text="eve.holt@reqres.in" />
+
+    <TextView
+        android:id="@+id/txtUuid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        tools:text="uuid" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logoutButton"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:textIsSelectable="false"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp"
+        android:inputType="text"
+        android:text="@string/unregister"
+        android:textColor="@color/blue_900" />
+
+</LinearLayout>

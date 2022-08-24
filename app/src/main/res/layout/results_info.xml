@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/credentials_info_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/credentialsInfoTitleHeadline"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
+        app:titleTextColor="?colorAccent" />
+
+    <TextView
+        android:id="@+id/title_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/credentialsTitle"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/title_info"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/title_info"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:textColor="?android:attr/textColorPrimary"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/credentials_info_toolbar"
+        tools:text="Title 922" />
+
+    <TextView
+        android:id="@+id/id_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:text="@string/credentials_id"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/id_info"
+        app:layout_constraintLeft_toLeftOf="@+id/title_header" />
+
+    <TextView
+        android:id="@+id/id_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:textColor="?android:attr/textColorPrimary"
+        app:layout_constraintLeft_toLeftOf="@+id/title_info"
+        app:layout_constraintTop_toBottomOf="@+id/title_info"
+        tools:text="5" />
+
+    <TextView
+        android:id="@+id/subject_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:text="@string/credentials_subject"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/subject_info"
+        app:layout_constraintLeft_toLeftOf="@+id/id_header" />
+
+    <TextView
+        android:id="@+id/subject_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:textColor="?android:attr/textColorPrimary"
+        app:layout_constraintLeft_toLeftOf="@+id/id_info"
+        app:layout_constraintTop_toBottomOf="@+id/id_info"
+        tools:text="Subject 174" />
+
+    <TextView
+        android:id="@+id/issuer_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:text="@string/credentials_issuer"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/issuer_info"
+        app:layout_constraintLeft_toLeftOf="@+id/subject_header" />
+
+    <TextView
+        android:id="@+id/issuer_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:textColor="?android:attr/textColorPrimary"
+        app:layout_constraintLeft_toLeftOf="@+id/subject_info"
+        app:layout_constraintTop_toBottomOf="@+id/subject_info"
+        tools:text="Issuer 290" />
+
+    <TextView
+        android:id="@+id/issued_on_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:text="@string/credentials_issued_on"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/issued_on_info"
+        app:layout_constraintLeft_toLeftOf="@+id/issuer_header" />
+
+    <TextView
+        android:id="@+id/issued_on_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:textColor="?android:attr/textColorPrimary"
+        app:layout_constraintLeft_toLeftOf="@+id/issuer_info"
+        app:layout_constraintTop_toBottomOf="@+id/issuer_info"
+        tools:text="1658324618558" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

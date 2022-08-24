@@ -1,0 +1,26 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GrpcPlayground" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/deep_purple_500</item>
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="colorError">@color/red_A700</item>
+        <item name="android:textColor">@color/grey_800</item>
+        <item name="android:windowBackground">@color/grey_50</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+        <!-- Transparent system bars for edge-to-edge. -->
+        <item name="android:statusBarColor">@color/deep_purple_500</item>
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+    </style>
+
+    <style name="Theme.GrpcPlayground" parent="Base.Theme.GrpcPlayground" />
+
+    <style name="MyButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="colorButtonNormal">?colorPrimary</item>
+        <item name="backgroundTint">?colorPrimary</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>
