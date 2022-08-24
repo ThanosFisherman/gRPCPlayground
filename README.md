@@ -34,7 +34,7 @@ In order to run the server just execute the following gradle task:
 
 The above task will first generate the required protocol buffer classes and also run the server all together.
 
-Alternatively you can click the little "Play" icon on the `main()` function residing in `Main.kt` file within the server module from through Android Studio. This will also run the server as long as the proto classes have been generated upfront.
+Alternatively you can click the little "Play" icon on the `main()` function residing in `Main.kt` file within the server module through Android Studio. This will also run the server as long as the proto classes have been generated upfront.
 
 ### Future goals and improvements
 
